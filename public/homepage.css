@@ -1,0 +1,135 @@
+/* this file is loaded by index.html and styles the page */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,100&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5em;
+  background-color: #dedede;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+#jobstable {
+  width: 100%;
+  background-color: #eeeeee;
+}
+table {
+}
+.cardview {
+  background-color: #ffffff;
+  border-bottom: solid 1px #bdbdbd;
+  padding: 1% 1% 1% 4%;
+  transition: background-color, 0.2s;
+}
+.cardview:hover {
+  background-color: #f5f5f5;
+}
+.bold{
+  font-size: 150%;
+  font-weight: bold;
+}
+#joblistContainer {
+  box-shadow: 5px 5px 5px grey;
+  margin: 0% 10% 0% 10%;
+  background-color: white;
+}
+.indexform {
+  padding: 2%;
+  border-bottom: solid 1px;
+}
+.boxsearchbar {
+}
+.line {
+  border-top: 1px solid lightgrey;
+}
+th {
+  border-style: none solid solid solid;
+  border-width: 1px;
+  border-color: lightgrey;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: #151515;
+  line-height: 1.1;
+  font-size: 3rem;
+}
+h4 {
+  font-family: "Roboto", sans-serif;
+  color: #151515;
+  line-height: 1.1;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+h5 {
+  font-family: "Roboto", sans-serif;
+  color: #151515;
+  line-height: 1.1;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+.bold {
+  font-style: none;
+}
+#searchbar {
+  border-radius: 25px;
+  height: 50px;
+  padding: 1%;
+}
+#details {
+  padding: 3%;
+}
+form {
+}
+
+input {
+  border: 1px solid silver;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+form button {
+  background-color: #bbbbf2;
+  border: 2px solid currentColor;
+  border-radius: 0.25em;
+  cursor: pointer;
+  font-size: inherit;
+  line-height: 1.4em;
+  padding: 0.25em 1em;
+  max-width: 20ch;
+}
+
+form button:hover {
+  background-color: lavender;
+}
+
+footer {
+  margin-top: 1em;
+  padding: 1em;
+  border-top: 1px solid lightgrey;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#navbar {
+  border-style: none none solid none;
+  border-width: 0;
+  border-color: lightgrey;
+  background-color: white;
+  box-shadow: 2px 2px 10px #00000038;
+}
+#body {
+}
+.space1 {
+  height: 25px;
+}
+.space2 {
+  height: 50px;
+}

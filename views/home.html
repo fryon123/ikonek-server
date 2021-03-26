@@ -1,0 +1,115 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A prototype by Leibniz Solutions." />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function() {
+        let taglines = [
+          "Bringing the convinience of remote job finding<br>to every filipino regardless of where they are.<br>",
+          "Binibigay ang madaling paghahanap ng trabaho online<br>sa mga Pilipino. Kahit nasan kaman.",
+          "Ginahatag sa inyuha ang kadalian sa pagpangitag trabaho<br>sa mga Pilipino. Bisag asa pa ka."
+        ];
+        var index = 0;
+        setInterval(function() {
+          $("#tagline").fadeOut("slow", () => {
+            $("#tagline").html(taglines[index]);
+          });
+
+          $("#tagline").fadeIn();
+          index++;
+          if (index >= taglines.length) index = 0;
+        }, 5000);
+      });
+    </script>
+    <title>Ikonek</title>
+
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://glitch.com/edit/favicon-app.ico"
+      type="image/x-icon"
+    />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/homepage.css" />
+  </head>
+  <body style="margin: 0; background-color: white;">
+    <div id="navbar">
+      <div class="space1"></div>
+      <h4 style="padding: 0.5%; margin: 2%; display: inline">
+        I-konek
+      </h4>
+      <div class="space1"></div>
+    </div>
+    <div id="body" style="">
+      <div class="space1"></div>
+      <h1 align="center">
+        Job oppurtunities.<br />
+        For everyone.
+      </h1>
+      <h4 align="center" id="tagline">
+        Bringing the convinience of remote job finding<br />
+        to every filipino regardless of where they are.<br />
+      </h4>
+      <div class="space1"></div>
+      <form id="search" style="display: inline;" action="/find" method="get">
+        <input
+          placeholder="Search for a service you want"
+          id="searchbar"
+          type="text"
+          style="width: 50%; margin: auto;"
+          onfocus="document.getElementById('search').submit();"
+        />
+      </form>
+      <div class="space1"></div>
+      <div class="space1"></div>
+      <div class="space1"></div>
+      <div class="space1"></div>
+      <div class="space1"></div>
+      <div class="space1"></div>
+      <div class="space1"></div>
+      <div class="line"></div>
+    </div>
+    <div id="details">
+      <h4>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Rhoncus urna neque
+        viverra justo nec. Orci a scelerisque purus semper eget. Scelerisque
+        purus semper eget duis at tellus at urna condimentum. Pharetra magna ac
+        placerat vestibulum lectus mauris. Tellus molestie nunc non blandit
+        massa enim. Nunc sed augue lacus viverra vitae congue eu consequat. Quis
+        lectus nulla at volutpat. Fames ac turpis egestas integer eget aliquet
+        nibh praesent tristique. Semper quis lectus nulla at volutpat diam ut.
+        Mattis ullamcorper velit sed ullamcorper. Suspendisse sed nisi lacus
+        sed. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Leo urna
+        molestie at elementum eu facilisis. Enim eu turpis egestas pretium
+        aenean pharetra magna ac. Sapien eget mi proin sed libero enim sed.
+        Ultricies mi quis hendrerit dolor magna eget est lorem ipsum. Volutpat
+        odio facilisis mauris sit. Tristique risus nec feugiat in fermentum
+        posuere. Pellentesque eu tincidunt tortor aliquam nulla. Sit amet massa
+        vitae tortor. Ac felis donec et odio pellentesque diam volutpat.
+        Vestibulum sed arcu non odio euismod. Hac habitasse platea dictumst
+        quisque sagittis purus sit amet. Tempor nec feugiat nisl pretium fusce
+        id velit ut tortor. Ac tortor dignissim convallis aenean et tortor. Nunc
+        scelerisque viverra mauris in aliquam sem. Vitae tempus quam
+        pellentesque nec nam aliquam sem et. Blandit volutpat maecenas volutpat
+        blandit aliquam etiam erat. Ante in nibh mauris cursus mattis molestie
+        a. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero.
+        Mauris vitae ultricies leo integer. Nulla pellentesque dignissim enim
+        sit amet venenatis urna cursus eget. Non pulvinar neque laoreet
+        suspendisse. Auctor neque vitae tempus quam. Ullamcorper malesuada proin
+        libero nunc consequat. Etiam tempor orci eu lobortis elementum. Dictum
+        fusce ut placerat orci.
+      </h4>
+    </div>
+  </body>
+</html>
