@@ -1,0 +1,13 @@
+#information {
+  background-color: white;
+  padding: 3%;
+  margin: 3%;
+  box-shadow: 5px 5px 5px #00000021;
+}
+button {
+  margin: auto;
+  padding: 1.3%;
+  background-color: #77582d;
+  border: none;
+  color: white;
+}
